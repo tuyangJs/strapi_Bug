@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_books",
+  "info": {
+    "singularName": "user-book",
+    "pluralName": "user-books",
+    "displayName": "UserBook",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "Describe": {
+      "type": "text",
+      "required": true
+    },
+    "Cover_Base64": {
+      "type": "text"
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "user_books"
+    },
+    "Aothor": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

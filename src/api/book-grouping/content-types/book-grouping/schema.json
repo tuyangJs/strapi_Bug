@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "book_groupings",
+  "info": {
+    "singularName": "book-grouping",
+    "pluralName": "book-groupings",
+    "displayName": "BookGrouping"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}
